@@ -8,6 +8,13 @@ import {Component, OnInit} from '@angular/core';
 export class HomeComponent implements OnInit{
   asd;
 
+  asd2;
+
+  updateValue(ev)
+  {
+    this.asd2 = ev; 
+  }
+
   constructor()
   {
     this.asd = '';
@@ -16,5 +23,6 @@ export class HomeComponent implements OnInit{
   ngOnInit()
   {
     this.asd = '9993352809';
+    this.asd2 = '9493588598';
   }
 }

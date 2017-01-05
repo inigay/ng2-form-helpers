@@ -1,4 +1,6 @@
 
 <input type="text" [(ngModel)]="asd" name="asd" phoneFormatter>
 
-<p>Model is {{asd}}</p>
+<input type="text" [ngModel]="asd2 | phone" (ngModelChange)="updateValue($event)" name="asd2" >
+
+<p>Model is {{asd2}}</p>

@@ -6,6 +6,13 @@ Repo contains directives, pipes and validators (reactive form) for making form f
 The idea of these components is to be able to format input fields of the form while not changing the format of 
 the model, ngModel for instance, 
 
+This is to be extended in case of putting different logic inside `writeValue()` whenever view is updated. Of course
+this can be used only with pipes without directives by using long notation
+
+`<input [ngModel]='phone | phone' (ngModelChange)='updatePhone($event)'  />`
+
+and providing method `updatePhone()` as a way to set the value of the input to the model
+
 ## phoneFormatter
 for example the first formatter I've created is for US based phone numbers
 
