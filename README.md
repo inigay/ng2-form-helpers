@@ -1,4 +1,4 @@
-# ng2-ini-validator
+# ng2-form-helpers
 Angular 2 Validators for reactive forms 
 
 ##Purpose
